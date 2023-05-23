@@ -33,7 +33,7 @@ jobs:
 
       - id: jupyter 
         name: Jupyter Notebook Execution
-        run: jupyter execute download.ipynb
+        run: jupyter execute notebook.ipynb
         shell: bash 
 
  # Add new files in folder, commit along with other modified files, push
