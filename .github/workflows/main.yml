@@ -36,6 +36,11 @@ jobs:
         run: jupyter execute notebook.ipynb
         shell: bash 
 
+      - id: add
+        name: Add content to dataset
+        run: echo "ricardo,34" >> dataset.csv
+        shell: bash
+
  # Add new files in folder, commit along with other modified files, push
       - id: commit
         name: Commit files
