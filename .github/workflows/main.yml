@@ -3,19 +3,16 @@
 name: Jupyter
 
 # Controls when the workflow will run
-on:
+on: 
   # Allows you to run this workflow manually from the Actions tab
-  pull-request:
-    types:
-      - closed
-    paths:
-      - '.env'
+  pull-request-review:
+    types: [submitted]
+    paths: ['.env']
 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  if_merged:
-    if: github.event.pull_request.merged == true
+  if: github.event.review.state == 'approved'
     # This workflow contains a single job called "build"
     build:
       # The type of runner that the job will run on
