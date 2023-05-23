@@ -5,7 +5,6 @@ name: Jupyter
 # Controls when the workflow will run
 on:
   # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
   pull-request:
     types:
       - closed
