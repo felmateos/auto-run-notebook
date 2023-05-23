@@ -5,4 +5,4 @@ after that new analyses can be made using this new entry
 
 this is a histogram based on its entries:
 
-![histogram](putput.png)
+![histogram](output.png)
